@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> UMS FKI </title>
+	<meta charset="utf-8">
+	<meta name="description" content="faculty of computing and informatics">
+	<meta name="keywords" content="ums, fki, fci, computing, informatics">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicon -->
+	<link rel="icon" href="img/ums_logo.png">
+
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<script>
+	var modal=document.getElementById('id01');
+	window.onclick = function(event){
+		if (event.target == modal) {
+			modal.style.display="none";
+		}
+	}
+</script>
+
+<body>
+	<!-- Register form -->
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Class Modal"> &times; </span>
+		<form class="modal-content" action="">
+			<div class="imglogincontainer">
+				<div><h3 style="color: #301b3f;">Registration Form</h3></div>
+			</div>
+			<div class="container">
+				<label for="name"><b> Full Name</b></label>
+				<input type="text" placeholder="Enter your full name" name="name" required>
+				<label for="matricsno"><b>Matrics No</b></label>
+				<input type="text" placeholder="Enter your matrics no" name="matricsno" required>
+				<label for="email"><b>E-mail</b></label>
+				<input type="email" placeholder="Enter your email" name="email" required>
+				<label for="phoneno"><b>Phone No</b></label>
+				<input type="text" placeholder="Enter your phone number" name="phoneno" required>
+				<label for="program"><b>Program</b></label>
+				<input type="text" placeholder="Enter your program" name="program" required>
+				<label for="cohort"><b>Cohort</b></label>
+				<input placeholder="Select your cohort" name="cohort" id="cohort" list="cohorts" required>
+				<datalist id="cohorts">
+					<option value="2018/2019" label="2018/2019">
+					<option value="2019/2020" label="2019/2020">	
+					<option value="2020/2021" label="2020/2021">
+					<option value="2021/2022" label="2021/2022">		
+				</datalist>
+				<button type="submit" class="btn"> Register </button>
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn"> Cancel </button>
+			</div>
+		</form>
+	</div>
+
+	<!-- Header Section -->
+	<header class="top">
+		<a href="http://bpa.ums.edu.my/index.php/en/home" class="site-logo"><img src="img/ums_logo.png" alt="ums_logo" class="logo"></a>
+		<a href="home.html" class="site-logo"><img src="img/fki_logo.png" alt="fki_logo" class="logo"></a>
+	</header>
+	
+	<!-- Navigation Section -->
+	
+	<nav class="nav-bar">
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="nav-wrap row">
+			<div class="col-lg-9">
+			  <ul class="nav">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="study.html">Study</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="admissions.html">Admissions</a></li>
+				<li><a href="alumni.html">Alumni</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+			  </ul>
+			</div>	
+			
+		    <div class="col-lg-3">
+			  <form class="search-form">
+				<input type="text" placeholder="Search here">
+				<button><i class="fa fa-search"></i></button>
+			  </form>
+			</div>
+		</div>	
+		</nav>
+
+
+	
+	
+	<!-- Section : Introduction of Faculty -->
+
+<section>
+	<div class="topic">
+		<h2 class="head-title"><b> Welcome to Faculty Computing and Informatics </b></h2>
+	</div>
+
+	<div class="video-section set-bg" data-setbg="img/video-bg.jpg">
+		<div class="video">
+			<iframe width="914" height="514" src="https://www.youtube.com/embed/xMObZFIOgoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>
+	
+	<!-- Section : News and Updates -->
+	<section class="news-section">
+		<h2><b><u>News & Updates</u></b></h2>
+		<div class="row">
+			<div class="col-lg-4 news-info">
+				<a href="#">
+					<img src="img/winner-of-web-design.png" alt="winner-of-web-design" class="news-photo">
+				</a>
+				<div>
+					<h5>3 May, 2022</h5>
+					<a href="#"><h4> Announcement of Winner of Webpage Design Competition </h4>
+					</a>
+				</div> 	
+			</div>
+
+			<div class="col-lg-4 news-info">
+				<img src="img/network-setup-contest.jpg" alt="network-setup-contest" class="news-photo">
+				<div>
+					<h5> 29 April, 2022 </h5>
+					<h4> Computer Club will organize a Network-Setup Contest in the following semester break. </h4>
+				</div> 				
+			</div>
+
+			<div class="col-lg-4 news-info">
+				<img src="img/congrats-winner-of-academic-awards.jpeg" alt="congrats-winner-of-academic-awards" class="news-photo">
+				<div>
+					<h5> 25 Aril, 2022 </h5>
+					<h4> Congratulation to those who receice an awards from academic departments. Keep on to the effort. </h4> 
+				</div>				
+			</div>
+		</div>
+
+		<a href="news.html" class="read-more" style="float:right;"> Read all news </a>
+	</section>
+
+	<!-- Section : Upcoming Events -->
+	<section class="upcevent-section" data-setbg="img/video-bg.jpg">
+		<h2> Upcoming Event </h2>
+		<span>
+			<div>
+				<div class="row event-info">
+					<div class="col-lg-6">
+						<img src="img/soft-tren-semi-2022.jpg" alt="soft-tren-semi-2022" class="event-photo">
+					</div>		
+					<div class="col-lg-6">
+						<h4>Software Trends Conference 2022</h4>
+						<p>During the seminar, the participants will listen to the speech by the special guess of our events. Dr Fakrul, based on the title of Software Trending of 2022. Dr Fakrul is an expert in software developing envirinment, and he has participated in the conference of new software environment trends with the other experts in this area. All students from FKI are encouraged to join this seminar that will be held on 30 May, 2022. Fill in your information with the below links to sign up for your place. Participation is limited to first 150 students.</p>
+						<button onclick="document.getElementById('id01').style.display='block'">Register</button>
+					</div>			
+				</div>
+
+				<div class="row event-info">
+					<div class="col-lg-6">
+						<h4>Artificial Inteligence Information Sharing</h4>
+						<p>Here is the good news for those who has interest in the field of Artificial Intelligence. Now we are having Dr Tan from Artificial Inteligence Association of Malaysia to share some information to our students in FKI. Students may take part in this events freely as it will be conducted through online platform. Register your name before 20 May, 2022 from now.</p>
+						<button onclick="document.getElementById('id01').style.display='block'">Register</button>
+					</div>
+					<div class="col-lg-6">
+						<img src="img/ai-tech-info-sharing.jpg" alt="ai-tech-info-sharing" class="event-photo">
+					</div>
+				</div>
+
+				<div class="row event-info">
+					<div class="col-lg-6">
+						<img src="img/pc-custom-contest-2022.jpg" alt="pc-custom-contest-2022" class="event-photo">	
+					</div>
+					<div class="col-lg-6">
+						<h4>PC Customization Contest 2022</h4>
+						<p>Invoke for those who like to custom on your own pc! We are now having a contest of pc customization on 10 July, 2022. Terms and conditions for participation will be given in in the link below. Take this opportunity to win a grand prize. Register yourself in a group of 6 person in max.</p>
+						<button onclick="document.getElementById('id01').style.display='block'">Register</button>						
+					</div>
+				</div>
+			</div>
+
+	</section>
+	
+	<!-- Javascript & JQuery ---->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>	
+	<script src="js/function.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="footer-widget">
+					<h4>About Us</h4>
+					<ul class="footer-menu">
+						<li><a href="#">Vision & Mission</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Staff</a></li>
+						<li><a href="#">Career</a></li>
+					</ul>									
+				</div>				
+			</div>
+
+			<div class="col-lg-4">
+				<div class="footer-widget">
+					<div class="footer-logo">
+						<a href="http://bpa.ums.edu.my/index.php/en/home" target="_blank"><img src="img/ums-logo2.png"></a>
+					</div>									
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="footer-info">
+					<h4>Connect with Us</h4>
+					<div class="social">
+						<ul>
+							<li>Faculty of Computing and Informatics</li>	
+							<li>Universiti Malaysia Sabah</li>
+							<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+							<a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							<li>Tel: 088-320000 Ext: 210600</li>         
+							<li>Email: pejfki[at]ums.edu.my</li>
+						</ul>			
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright"><p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> University Malaysia Sabah. All rights reserved</p></div>
+		</div>
+	</div>
+</footer>
+
+
+</html>

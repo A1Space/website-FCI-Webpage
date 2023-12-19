@@ -1,0 +1,580 @@
+/* General body and heading css */
+
+html, body{
+	height: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: serif, sans-serif, monospace;
+	background: #E9D5DA;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	color: #301b3f;
+	font-weight: 600px;
+}
+
+h1{
+	font-size: 4.375rem;
+}
+
+h2{
+	font-size: 2.25rem;
+}
+
+h3{
+	font-size: 1.875rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+h5{
+	font-size: 1.125rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+
+p{
+	font-size: 0.875rem;
+	color: #585858;
+	line-height: 2;
+}
+
+img{
+	max-width: 100%;
+}
+
+input:focus,
+select: focus,
+button: focus,
+textarea: focus{
+	outline: none;
+}
+
+a:hover,
+a:focus{
+	text-decoration: none;
+	outline: none;
+	font-size: 1.2rem;
+	opacity: 1.2;
+	color: #2d0552;
+}
+
+ul,
+ol{
+	padding: 0;
+	margin: 0;
+}
+
+/* ----------
+	Header
+   ---------- */
+
+.top{
+	position: relative;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	z-index : 99;
+}
+
+.site-logo{
+	display: inline-block;
+}
+
+.logo{
+	height: 80px;
+	width: 80px;
+}
+
+.user-register{
+	float: right;
+	background: #330080;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 14px;
+	padding: 12px 19px;
+	line-height: 1;
+	border-radius: 15px;
+}
+
+.user-register a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ----------------------
+   Register Form -hidden
+   ---------------------- */
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 60%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 60px;
+}
+
+.close{
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+	color: red;
+	cursor: pointer;
+}
+
+.modal-content{
+	background-color: #fefefe;
+	margin: 5px auto;
+	border: 1px solid;
+	color: #888;
+	width: 60%;
+}
+
+.imglogincontainer{
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+.container{
+	padding: 16px;
+}
+
+.modal-content form{
+	border: 3px solid #f1f1f1;
+}
+
+.modal-content input[type=text], input[type=email]{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.modal-content #cohort{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.modal-content button{
+	background-color: #301b3f;
+	color: white;
+	padding: 8px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.modal-content .btn{
+	float: left;
+	margin: 10px 100px;
+}
+
+/* ----------------
+   Navigation bar
+   ---------------- */
+.nav-bar{
+	position: relative;
+	padding-top: 10px;
+	background: #333366;
+	height:auto;
+}
+
+.nav{
+	list-style: none;
+	float: center-left;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+.nav li{
+	display: inline;
+}
+
+.nav li a{
+	display: inline-block;
+	font-size: 1rem;
+	color:#fff;
+	margin-left: 50px;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	color: #eb2b63;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.search-form{
+	max-width: 500px;
+	border: none;
+	box-sizing: border-box;
+	float:right; 
+	padding-top:15px;
+}
+
+.search-form input[type=text]{
+	border: none;
+}
+
+.search-tool button{
+	border: none;
+	cursor: pointer;
+	float: right;
+}
+
+.nav-switch{
+	display: none;
+}
+
+.nav-wrap{
+	float:none;
+}
+
+.topic{
+	position: relative;
+	text-align: center;
+	margin: 50px;
+}
+
+.header-title{
+	text-align: center;
+}
+
+/* -------------
+   Video of FKI
+   ------------- */
+
+.video-section{
+	padding-top: 20px;
+	display: flex;
+	display: -ms-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.set-bg{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.video iframe{
+	width: 914px; 
+	height: 514px;
+	border: 2px solid black;
+	margin: auto;
+}
+
+/* -------------
+   News of FKI
+   ------------- */
+.news-section{
+	width: 90%;
+	height: auto;
+	margin: 50px 65px;
+}
+
+.news-section h2{
+	padding: 50px 0;
+}
+
+.news-section .news-info{
+	border-radius: 4px; 
+	width: 100%;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.news-section .news-info h5{
+	padding: 50px 0 20px 0;
+}
+
+.news-section .news-info h4{
+	width: 90%;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.news-section .news-info img{
+  	width: 300px; 
+  	height: 200px;
+}
+
+.news-section .news-info img:hover{
+	border: 1px solid #000;
+	transform: scale(1.05);
+}
+
+.news-section .news-info h4:hover{
+	transform: scale(1.05);
+	text-decoration: underline;
+}
+
+.read-more{
+	margin-top: 20px;
+}
+
+/* ----------------
+    Upcoming Event
+   ---------------- */
+
+.upcevent-section{
+	margin: 100px 65px;
+	width: 90%;
+	height: auto;
+}
+
+.upcevent-section h2{
+	margin: 50px 0;
+	text-decoration: underline;
+	font-weight: 800;
+}
+
+.upcevent-section .event-info{
+	margin-bottom: 100px;
+}
+
+.upcevent-section .event-info h4{
+	padding: 10px 0;
+	font-weight: 600;
+}
+
+.upcevent-section .event-info p{
+	padding: 10px 0;
+	color: #000;
+}
+
+.upcevent-section .event-info button{
+	background-color: transparent;
+	color: #363062;
+	border-radius: 30px;
+	padding: 10px 20px;
+	border: 2px solid #363062;
+}
+
+.upcevent-section .event-info button:hover{
+	background-color: #daddfc;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+/*-----------
+    Footer
+-------------*/
+.footer-section{
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	background-color: #333366;
+}
+
+.footer-widget{
+	padding-bottom: 30px;
+}
+
+.footer-widget h4{
+	text-decoration: underline;
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.footer-widget .footer-menu li{
+	list-style: none;
+	padding: 10px 0;
+}	
+
+.footer-widget .footer-menu li a{
+	color: #fff;
+}
+
+.footer-widget .footer-menu li a:hover{
+	color: #eb2b63;;
+}
+
+.footer-logo img{
+	width: 50%;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.footer-info{
+	width: 400px;
+	padding-bottom: 30px;
+}
+
+.footer-info h4{
+	color: #fff;
+	font-weight: 600;
+	padding-left: 5px;
+	padding-bottom: 10px;
+}
+
+.footer-info li{
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	color: #fff;
+}
+
+.footer-info .social a{
+	padding: 10px 5px;
+}
+
+.footer-info .social i{
+	font-size: 36px;
+	color: #fff;
+}
+
+.footer-info .social i:hover{
+	color: #eb2b63;
+}
+
+.copyright p{
+	text-align: center;
+	color: #fff;
+}
+
+
+
+/*-----------
+Responsive
+-------------*/
+
+/* media screen: 992px */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+.video iframe{
+	width: 100%;
+	height: auto;
+}
+
+}
+
+/* tablet: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+.video iframe{
+	width: 100%;
+	height: auto;
+	
+}
+
+}
+
+/* mobile: 767px */
+@media only screen and (max-width: 767px) {
+.nav-bar{
+	padding: 10px 5px 50px 0;
+}
+	
+.nav-wrap{
+	display: none;
+	position: absolute;
+	background:#e4f2f7;
+	width:100%;
+	left: 4%;
+	top:100%;
+	box-shadow: 0 10px 50px rgba(93,93,93,0.15);
+	-webkit-box-shadow: 0 10px 50px rgba(93,93,93,0.15);
+	z-index: 3;
+}
+
+.nav{
+	left:0%;
+	float:none;
+	margin-left: -50px;
+}	
+
+.nav li{
+	display: block;
+	width: 100%;
+}	
+
+.nav li a{
+	display: block;
+	float: none;
+	text-align: center;
+	color: #303c6c;
+	border-top: 1px solid #efefef;
+	padding: 13px 0 13px 0;
+}
+
+.nav li a:hover{
+	color: #fff;
+	background:#151B54;
+}
+
+.search-form{
+	float: none;
+	width: 100%;
+}
+
+.nav-switch{
+	display:block;
+	right: 30px;
+	float: right;
+	font-size:30px;
+	color:#000;
+	curson: pointer;
+	margin-right: 40px;
+}
+
+.video-section{
+	width: 100%;
+	height: auto;
+}
+
+.video iframe{
+	width: 100%;
+	height: auto;
+	
+}
+
+.news-section{
+	margin: 0 0;
+}
+
+.upcevent-section{
+	margin: 0 0;
+}
+
+.upcevent-section{
+	padding-top: 30px;
+}
+
+.upcevent-section .event-info button{
+	margin-bottom: 30px;
+}
+}
